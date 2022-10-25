@@ -1,0 +1,32 @@
+name: Deploy 
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  SERVER_HOST: 31.31.198.62
+  SERVER_USER: u1812257
+  SERVER_PATH: /var/www/u1812257/data/www/plootony.online/projects/ncdescision/
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      # Install ssh key
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2.3.1
+        with:
+          key: "${{ secrets.MY_KEY }}"
+          known_hosts: "just-a-placeholder-so-we-dont-get-errors"
+          
+      - name: Generate auth hosts
+        run: ssh-keyscan -H ${{ env.SERVER_HOST }} >> ~/.ssh/known_hosts
+      # Deploy
+      - run:  cd dist && rsync --archive --compress --progress . ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:${{ env.SERVER_PATH }}
