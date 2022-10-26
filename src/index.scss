@@ -1,4 +1,6 @@
 @import 'libs/normalize';
-@import 'style/fonts';
-@import 'style/var';
-@import 'style/style';
+@import 'style/_var';
+@import 'style/_common';
+@import 'style/_header';
+@import 'style/_main';
+@import 'style/animations'

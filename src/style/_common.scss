@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: $dark;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+.dropdown {
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: none;
+    
+   
+  }
+
+  &:hover &__inner {
+    display: flex;
+  }
+
+  &__content {
+    margin-top: 30px;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: $brs-small;
+    background: $white;
+    box-shadow: $box-shadow-small;
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,49 @@
+// header styles start
+
+.header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+        padding: 0 12px;
+    }
+
+    &__logo {
+        width: 151px;
+    }
+}
+
+.main-nav {
+    display: flex;
+
+    &__list {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+    }
+
+    &__list-item {
+        font-size: 15px;
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: $cyan;
+            transition: .5s;
+        }
+    }
+
+}
+
+// header styles end
+
+//header adaptive styles start
+
+//header adaptive styles end
+
