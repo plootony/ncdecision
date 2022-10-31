@@ -22,19 +22,15 @@ body {
     position: absolute;
     right: 0;
     top: 15px;
-    display: none;
-    
-   
+    visibility: hidden;
   }
 
   &:hover &__inner {
-    display: flex;
+    visibility: visible;
   }
 
   &__content {
     margin-top: 30px;
-    min-width: 200px;
-    min-height: 200px;
     border-radius: $brs-small;
     background: $white;
     box-shadow: $box-shadow-small;
@@ -45,4 +41,10 @@ body {
     border: none;
     cursor: pointer;
   }
+}
+
+.cabinet-nav {
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
