@@ -1,6 +1,17 @@
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: $dark;
+}
+
+h1,h2,h3,h4 {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  box-shadow: none;
 }
 
 .container {
@@ -13,7 +24,6 @@ body {
   width: 100%;
   height: auto;
 }
-
 
 .dropdown {
   position: relative;
@@ -43,8 +53,19 @@ body {
   }
 }
 
-.cabinet-nav {
-  margin: 0;
-  list-style: none;
-  padding: 0;
+.btn {
+  display: flex;
+  text-align: center;
+  padding: 10px 28px;
+  border-radius: $brs-btn;
+  cursor: pointer;
+
+  &-primary {
+    background: $light-blue;
+    color: $white;
+  }
+
+  &-primary:hover {
+    background-color: $hover-blue;
+  }
 }
