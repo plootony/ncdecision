@@ -1,18 +1,18 @@
 .intro {
     background-color: $dark-blue;
-    height: 80vh;
+    height: 100vh;
 }
 
 .intro-content {
-    margin-top: 72px;
-    height: 80vh;
+    // margin-top: 72px;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .intro-slogan {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
 
@@ -33,5 +33,45 @@
 
 .btn--slogan {
     margin-top: 50px;
+}
+
+// .intro-media {
+   
+// }
+
+
+@media (max-width: 768px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .intro,
+    .intro-content {
+        height: auto;
+    }
+
+    .intro-content {
+        flex-direction: column-reverse;
+    }
+
+    .intro-slogan {
+        align-items: center;
+
+        &__title {
+            font-size: 32px;
+            text-align: center;
+        }
+    
+        &__subtitle {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .intro-media {
+        width: 85%;
+    }
+
 }
 
