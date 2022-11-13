@@ -12,6 +12,7 @@
 }
 
 .intro-slogan {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -35,6 +36,7 @@
 .intro-media {
     display: flex;
     flex-shrink: 0;
+    width: 50%;
 }
 
 .btn--slogan {
