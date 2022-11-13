@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,19 +46,19 @@
             <h2 class="intro-slogan__subtitle">От идеи к результату</h2>
             <button type="button" class="btn btn-primary btn--slogan">Расчитать</button>
           </div><!-- /intro-slogan -->
-          <picture class="intro-media">
-            <!-- <source srcset="img/intro/main-img_small@x1.webp 1x, img/intro/main-img_small@x2.webp 2x" media="(max-width: 768px)"> -->
-            <source srcset="img/intro/1.webp 1x, img/intro/2.webp 2x">
-            <img src="#" alt="">
-            <!-- <img srcset="img/intro/intro.webp" width="" alt="Главное изображение секции Intro"> -->
+          <picture>
+            <source srcset="img/intro/main-img_small@1x.webp 1x, img/intro/main-img_small@2x.webp 2x"
+              media="(max-width: 768px)">
+            <source srcset="img/intro/main-img@1x.webp 1x, img/intro/main-img@2x.webp 2x">
+            <img class="img-responsive" src="img/intro/main-img_small@1x.webp" alt="Главное изображение секции Intro">
           </picture><!-- /intro-media -->
-
         </div><!-- /intro-content -->
       </div><!-- /container -->
     </section><!-- /head -->
   </main><!-- main -->
   <footer class="footer">
     <div class="container">
+
 
     </div><!-- /container -->
   </footer> <!-- footer -->

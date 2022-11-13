@@ -1,18 +1,18 @@
 .intro {
     background-color: $dark-blue;
-    
 }
 
 .intro-content {
-    // margin-top: 72px;
-    height: 100vh;
+    margin-top: 72px;
+    height: calc(100vh - 72px);
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .intro-slogan {
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
 
@@ -20,6 +20,7 @@
         color: $white;
         font-size: 48px;
         font-weight: 700;
+        padding-right: 25px;
     }
 
     &__subtitle {
@@ -59,7 +60,7 @@
             font-size: 32px;
             text-align: center;
         }
-    
+
         &__subtitle {
             font-size: 20px;
             text-align: center;
@@ -71,4 +72,3 @@
     }
 
 }
-
