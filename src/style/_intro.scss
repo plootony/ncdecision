@@ -32,6 +32,11 @@
     }
 }
 
+.intro-media {
+    display: flex;
+    flex-shrink: 0;
+}
+
 .btn--slogan {
     margin-top: 50px;
 }
